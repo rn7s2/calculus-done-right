@@ -1,0 +1,59 @@
+\section{函数与极限}
+
+本章涉及了高等数学中基本的玩具.
+
+\subsection{一些新玩具}
+\subsubsection{等式}
+\(a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+a^{n-3}b^2+\cdots+a^2b^{n-3}+ab^{n-2}+b^{n-1})\)
+
+\subsubsection{不等式}
+(Cauchy-Schwartz不等式) 对任意\(a_i,b_i\in\mathbf{R}\), 有
+\[\left(\sum_{i=1}^na_ib_i\right)^2\le\sum_{i=1}^na_i^2\sum_{i=1}^nb_i^2.\]
+
+\subsubsection{三角函数}
+\begin{description}
+\item[余切] \(\displaystyle y=\cot x=\frac{\cos x}{\sin x},\{x\mid x\ne n\pi,n=0,\pm 1,\pm 2,\cdots\}\)
+\item[正割] \(\displaystyle y=\sec x=\frac{1}{\cos x},\{x\mid x\ne n\pi+\frac{\pi}{2},n=0,\pm 1,\pm 2,\cdots\}\)
+\item[余割] \(\displaystyle y=\csc x=\frac{1}{\sin x},\{x\mid x\ne n\pi,n=0,\pm 1,\pm 2,\cdots\}\)
+\end{description}
+
+\subsubsection{反三角函数}
+
+\subsubsection{双曲函数}
+\paragraph{定义}
+\begin{description}
+\item[双曲正弦函数] \(\displaystyle \sh x=\frac{e^x-e^{-x}}{2},D=\mathbf{R}\)
+\item[双曲余弦函数] \(\displaystyle \ch x=\frac{e^x+e^{-x}}{2},D=\mathbf{R}\)
+\item[双曲正切函数] \(\displaystyle \th x=\frac{\sh x}{\ch x}=\frac{e^x-e^{-x}}{e^x+e^{-x}},D=\mathbf{R}\)
+\item[双曲余切函数] \(\displaystyle \cth x=\frac{\ch x}{\sh x}=\frac{e^x+e^{-x}}{e^x-e^{-x}},D=\mathbf{R}\)
+\item[反双曲正弦] \(\arcsh x=\ln (x+\sqrt{x^2+1}),D=\mathbf{R}\)
+\item[反双曲余弦] \(\arcch x=\ln (x+\sqrt{x^2-1}),D=[1,+\infty)\)
+\item[反双曲正切] \(\displaystyle \arcth x=\frac{1}{2}\ln \frac{1+x}{1-x},D=(-1,1)\)
+\end{description}
+
+\paragraph{性质}
+\begin{itemize}
+\item \(\mathrm{ch}^2\,x-\mathrm{sh}^2\,x=1\)
+\item \(\sh 2x=2\sh x\ch x\)
+\item \(\ch 2x=\mathrm{sh}^2\,x+\mathrm{ch}^2\,x\)
+\item \(\sh (x\pm y)=\sh x\ch y\pm \ch x\sh y\)
+\item \(\ch (x\pm y)=\ch x\ch y\pm \sh x\sh y\)
+\end{itemize}
+
+\subsection{求极限的方法}
+\subsubsection{按玩法常用程度排序}
+\begin{enumerate}
+\item 极限的四则运算, 极限的复合运算
+\item 初等函数的连续性, \(\displaystyle\lim_{x\to x_0}f(x)=f(x_0)\)
+\item 特殊极限
+\item 等价无穷小 (相乘除)
+\item 夹逼定理
+\item 有界量\(\times\)无穷小\(=\)无穷小
+\item 单调有界 (证明)
+\item 其它: 分子有理化
+\end{enumerate}
+
+\subsubsection{一系列等价无穷小}
+\(\displaystyle x\sim\sin x\sim\tan x\sim\arcsin x\sim\arctan x\sim e^x-1\sim\ln(1+x)\\
+(1+x)^\alpha-1\sim\alpha x\\
+1-\cos x\sim\frac{x^2}{2}\)
