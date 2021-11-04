@@ -2,6 +2,14 @@
 
 本章涉及了高等数学中基本的玩具.
 
+\subsection{函数的初等性态}{研究函数性质的几个角度}
+\begin{itemize}
+\item 奇偶性
+\item 周期性
+\item 单调性
+\item 有界性
+\end{itemize}
+
 \subsection{一些新玩具}
 \subsubsection{等式}
 \(a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+a^{n-3}b^2+\cdots+a^2b^{n-3}+ab^{n-2}+b^{n-1})\)
@@ -40,6 +48,20 @@
 \item \(\ch (x\pm y)=\ch x\ch y\pm \sh x\sh y\)
 \end{itemize}
 
+\subsection{数列的极限}
+\subsubsection{定义}
+\(\forall\varepsilon>0\), \(\exists N>0\), 当\(n>N\)时, 恒有\(|x_n-a|<\varepsilon\)成立.
+
+\subsubsection{性质}
+\begin{description}
+\item[极限的唯一性] 若数列\(\{x_n\}\)收敛, 则它的极限唯一.
+\item[收敛数列的有界性] 若数列\(\{x_n\}\)收敛, 则\(\{x_n\}\)有界.
+\item[收敛数列的保序性] 设有数列\(\{x_n\}\), \(\{y_n\}\), \(\displaystyle\lim_{n\to\infty}x_n=a\), \(\displaystyle\lim_{n\to\infty}y_n=b\), 且自某一项起, 有\(x_n\le y_n\), 则\(a\le b\).
+\item[子列的收敛性] 数列\(\{x_n\}\)收敛于\(a\)的充分必要条件是\(\{x_n\}\)的任一子列都收敛, 且都收敛于\(a\).
+\end{description}
+
+\subsection{函数的极限}
+
 \subsection{求极限的方法}
 \subsubsection{按玩法常用程度排序}
 \begin{enumerate}
@@ -53,7 +75,12 @@
 \item 其它: 分子有理化
 \end{enumerate}
 
+\subsection{极限的定义}
+
 \subsubsection{一系列等价无穷小}
-\(\displaystyle x\sim\sin x\sim\tan x\sim\arcsin x\sim\arctan x\sim e^x-1\sim\ln(1+x)\\
-(1+x)^\alpha-1\sim\alpha x\\
-1-\cos x\sim\frac{x^2}{2}\)
+\[\displaystyle x\sim\sin x\sim\tan x\sim\arcsin x\sim\arctan x\sim e^x-1\sim\ln(1+x)\;(x\to 0)\]
+\[(1+x)^\alpha-1\sim\alpha x\;(x\to 0)\]
+\[1-\cos x\sim\frac{x^2}{2}\;(x\to 0)\]
+
+\subsection{函数的连续性与间断点}
+连续的定义
